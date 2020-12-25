@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.75.1">
+    <title>Employeeistic</title>
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+    <script src="https://kit.fontawesome.com/1da5b0fd1a.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="CSS/carousel.css" rel="stylesheet">
+</head>
+
+<body style="padding-bottom: 1rem;">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo/logo.png" alt="Logo" height="45" width="117" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+                        <li class="nav-item active">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Dashboard</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-5">
+        <div class="container px-4">
+            <div class="row">
+                <div class="border border-1 col-md-3 p-3">
+                    <div class="card border-light">
+                        <img src="images/Users/Employee/profile-emp.jpg" class="card-img-top rounded-circle float-start"
+                            alt="Profile Picture">
+                        <div class="card-body">
+                            <div class="d-flex p-2 justify-content-center">
+                                <h5 class="card-title float-left mt-1 mr-2 text-center font-weight-bold">
+                                    Kishan Dasani
+                                </h5>
+                                <span>
+                                    <button type="button" class=" btn btn-secondary" data-bs-toggle="tooltip"
+                                        data-bs-html="true" title="Male">
+                                        <i class="fa fa-male" aria-hidden="true"></i>
+                                    </button>
+                                </span>
+                            </div>
+
+                            <div class="d-flex mt-2 border-bottom border-top p-2 justify-content-center">
+                                <span class="badge rounded-pill bg-warning">
+                                    <h6>Junior Web Dev</h6>
+                                </span>
+                            </div>
+
+                            <div class="d-flex mt-2 container p-2 justify-content-center">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 mb-1">
+                                        <span class="badge bg-primary mx-auto bg-primary">
+                                            <h6>HTML</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <span class="badge bg-success  mx-auto bg-primary">
+                                            <h6>Python</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <span class="badge bg-secondary  mx-auto bg-primary">
+                                            <h6>CSS</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <span class="badge bg-info  mx-auto bg-primary">
+                                            <h6>JS</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <span class="badge bg-dark  mx-auto bg-primary">
+                                            <h6>React</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <span class="badge bg-primary  mx-auto bg-primary">
+                                            <h6>Angular</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <span class="badge bg-warning  mx-auto bg-primary">
+                                            <h6>Node</h6>
+                                        </span>
+                                    </div>
+                                    <div class="col-12 mb-1">
+                                        <span class="badge bg-info  mx-auto bg-primary">
+                                            <h6>MongoDB</h6>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="border border-1 col-md-9">
+                    <div class="w-100 ">
+                        <h2 class="text-center my-2">Your Profile</h2>
+                    </div>
+
+                    <div class="my-3 border-top row px-3">
+                        <input type="text" class="border mt-3 border-3 form-control" value="Kishan" id="empFirstName"
+                            placeholder="First Name">
+                    </div>
+                    <div class="my-3 row px-3">
+                        <input type="text" class="border border-3 form-control" value="Dasani" id="empLastName"
+                            placeholder="Last Name">
+                    </div>
+                    <div class="my-3 row px-3">
+                        <input type="email" disabled class="border border-3 form-control"
+                            value="kishankdasani@gmail.com" id="empemail" placeholder="Email">
+                    </div>
+                    <div class="my-3 row px-3">
+                        <input type="text" class="my-1 border border-3 form-control" id="addressLine1"
+                            value='"Amit", Wagheswari Plot, Wadia Road' />
+                        <input type="text" class="border border-3 form-control" value="Porbandar-360575" id="city"
+                            placeholder="City" />
+                    </div>
+                    <div class="my-3 border-top row justify-content-center px-3">
+                        <img src="images/Users/Employee/profile-emp.jpg" width="60%" height="60%"
+                            class="col-md-5 my-3 float-left" alt="Profile Picture" />
+                        <div class="col-md-5 float-right my-auto">
+                            <h6>Add/Change Picture</h6>
+                            <input type="file" accept="image/jpeg, image/png" />
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer mt-3 text-center text-sm-left">&copy; 2020 Employeeistic</footer>
+            </div>
+        </div>
+    </main>
+    <!-- JavaScript Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
+        integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

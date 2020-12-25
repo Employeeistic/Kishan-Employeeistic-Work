@@ -5,18 +5,9 @@
     <meta charset="utf-8">
     <title>Employeeistic</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- App favicon -->
-    <!-- <link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/1da5b0fd1a.js" crossorigin="anonymous"></script>
-    <!-- DataTables -->
-    <!-- <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- App css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/icons.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -50,18 +41,12 @@
     <!-- Top Bar End -->
     <div class="page-wrapper-img">
         <div class="page-wrapper-img-inner">
-            <div class="sidebar-user media">
+            <div class="sidebar-user media ml-3">
                 <img src="images/Users/Admin/sneh.jpg" alt="user" class="rounded-circle img-thumbnail mb-1" />
                 <span class="online-icon">
                 </span>
                 <div class="media-body align-item-center">
                     <h5 class="ml-2">Sneh Ghetiya</h5>
-                    <ul class="list-unstyled list-inline mb-0 mt-2">
-                        <li class="list-inline-item"><a href="javascript: void(0);" class=""><i
-                                    class="fa fa-user-circle"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript: void(0);" class=""><i
-                                    class="fa fa-cog"></i></a></li>
-                    </ul>
                 </div>
             </div>
             <!-- Page-Title -->
@@ -70,13 +55,12 @@
                     <div class="page-title-box">
                         <div class="dropdown float-right align-item-center mt-2">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Switch to ..
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="dashboard.html">Chart's Page</a>
                                 <a class="dropdown-item" href="employee-list.html">Search Employee Page</a>
-                                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
                             </div>
                         </div>
                         <h4 class="page-title mb-2">Dashboard</h4>
@@ -94,7 +78,6 @@
             <!--end row-->
             <!-- end page title end breadcrumb -->
         </div>
-        <!--end page-wrapper-img-inner-->
     </div>
     <!--end page-wrapper-img-->
     <div class="page-wrapper">
@@ -103,20 +86,19 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 mt-2">
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="mt-0 header-title">Search for Employees with specific skills</h4>
-                                    <div class="input-group mb-2 float-right flex-nowrap">
-                                        <div class="input-group-prepend">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group flex-nowrap">
                                             <span class="input-group-text" id="addon-wrapping">@</span>
+                                            <input type="text" class="form-control" placeholder="Employee Name"
+                                                aria-label="Employee Name" aria-describedby="addon-wrapping" />
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Employeename"
-                                            aria-label="Employeename" aria-describedby="addon-wrapping">
-                                        <br>
                                     </div>
                                     <table id="datatable"
-                                        class="table table-striped table-bordered dt-responsive nowrap"
+                                        class="table table-striped my-3 table-bordered dt-responsive nowrap"
                                         style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                         <thead>
                                             <tr>
@@ -171,31 +153,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
-    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/metisMenu.min.js"></script>
-        <script src="assets/js/waves.min.js"></script>
-        <script src="assets/js/jquery.slimscroll.min.js"></script> -->
     <!-- Required datatable js -->
     <script src="JS/jquery.dataTables.min.js"></script>
     <script src="JS/dataTables.bootstrap4.min.js"></script>
-    <!-- Buttons examples -->
-    <!-- <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script> -->
-    <!-- <script src="assets/plugins/datatables/buttons.bootstrap4.min.js"></script> -->
-    <!-- <script src="assets/plugins/datatables/jszip.min.js"></script> -->
-    <!-- <script src="assets/plugins/datatables/pdfmake.min.js"></script> -->
-    <!-- <script src="assets/plugins/datatables/vfs_fonts.js"></script> -->
-    <!-- <script src="assets/plugins/datatables/buttons.html5.min.js"></script> -->
-    <!-- <script src="assets/plugins/datatables/buttons.print.min.js"></script> -->
-    <!-- <script src="assets/plugins/datatables/buttons.colVis.min.js"></script> -->
-    <!-- Responsive examples -->
-    <!-- <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script> -->
-    <!-- <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script> -->
     <script src="JS/jquery.datatable.init.js"></script>
-    <!-- App js -->
-    <!-- <script src="assets/js/app.js"></script> -->
 </body>
 
 </html>

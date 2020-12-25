@@ -5,18 +5,9 @@
     <meta charset="utf-8">
     <title>Employeeistic</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!-- App favicon -->
-    <!-- <link href="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"> -->
     <script src="https://kit.fontawesome.com/1da5b0fd1a.js" crossorigin="anonymous"></script>
-    <!-- DataTables -->
-    <!-- <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- App css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/icons.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+        integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -50,18 +41,12 @@
     <!-- Top Bar End -->
     <div class="page-wrapper-img">
         <div class="page-wrapper-img-inner">
-            <div class="sidebar-user media">
+            <div class="sidebar-user media ml-3">
                 <img src="images/Users/Admin/sneh.jpg" alt="user" class="rounded-circle img-thumbnail mb-1" />
                 <span class="online-icon">
                 </span>
                 <div class="media-body align-item-center">
                     <h5 class="ml-2">Sneh Ghetiya</h5>
-                    <ul class="list-unstyled list-inline mb-0 mt-2">
-                        <li class="list-inline-item"><a href="javascript: void(0);" class=""><i
-                                    class="fa fa-user-circle"></i></a></li>
-                        <li class="list-inline-item"><a href="javascript: void(0);" class=""><i
-                                    class="fa fa-cog"></i></a></li>
-                    </ul>
                 </div>
             </div>
             <!-- Page-Title -->
@@ -70,13 +55,12 @@
                     <div class="page-title-box">
                         <div class="dropdown float-right align-item-center mt-2">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Switch to ..
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="dashboard.html">Chart's Page</a>
                                 <a class="dropdown-item" href="employee-list.html">Search Employee Page</a>
-                                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
                             </div>
                         </div>
                         <h4 class="page-title mb-2">Dashboard</h4>
@@ -103,7 +87,7 @@
             <div class="page-content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 mt-2">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
@@ -159,36 +143,35 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-body">
-                                    <h4 class="float-left header-title mt-0">Performance Over Year</h4>
-                                    <div class="input-group mb-2 float-right flex-nowrap">
-                                        <div class="input-group-prepend">
+                                <div class="card-body py-3">
+                                    <h4 class="float-left header-title mt-0 mb-3">Performance Over Year</h4>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group flex-nowrap">
                                             <span class="input-group-text" id="addon-wrapping">@</span>
+                                            <input type="text" class="form-control" placeholder="Employee Name"
+                                                aria-label="Employee Name" aria-describedby="addon-wrapping" />
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Employeename"
-                                            aria-label="Employeename" aria-describedby="addon-wrapping">
-                                        <br>
                                     </div>
-                                    <div class="dropdown mt-4" style="font-size: medium;">
-                                        <input type="checkbox" id="c" name="c" value="c"> C
-                                        <input type="checkbox" id="cpp" name="cpp" value="cpp"> C++
-                                        <input type="checkbox" id="java" name="java" value="java"> Java
-                                        <input type="checkbox" id="python" name="python" value="python"> Python
-                                        <input type="checkbox" id="javascript" name="javascript" value="javascript">
+                                    <div class="mb-3">
+                                        <input type="checkbox" id="c" name="c" value="c" /> C
+                                        <input type="checkbox" id="cpp" name="cpp" value="cpp" /> C++
+                                        <input type="checkbox" id="java" name="java" value="java" /> Java
+                                        <input type="checkbox" id="python" name="python" value="python" /> Python
+                                        <input type="checkbox" id="javascript" name="javascript" value="javascript" />
                                         JavaScript
-                                        <input type="checkbox" id="csharp" name="csharp" value="csharp"> C#
-                                        <input type="checkbox" id="UiUx" name="UiUx" value="UiUx"> UI/UX
-                                        <input type="checkbox" id="php" name="php" value="php"> PHP
-                                        <input type="checkbox" id="networking" name="networking" value="networking">
+                                        <input type="checkbox" id="csharp" name="csharp" value="csharp" /> C#
+                                        <input type="checkbox" id="UiUx" name="UiUx" value="UiUx" /> UI/UX
+                                        <input type="checkbox" id="php" name="php" value="php" /> PHP
+                                        <input type="checkbox" id="networking" name="networking" value="networking" />
                                         Networking
-                                        <input type="checkbox" id="dbAdmin" name="dbAdmin" value="dbAdmin"> Database
+                                        <input type="checkbox" id="dbAdmin" name="dbAdmin" value="dbAdmin" /> Database
                                         Administration
-                                        <input type="checkbox" id="seo" name="seo" value="seo"> SEO
-                                        <input type="checkbox" id="debugging" name="debugging" value="debugging">
+                                        <input type="checkbox" id="seo" name="seo" value="seo" /> SEO
+                                        <input type="checkbox" id="debugging" name="debugging" value="debugging" />
                                         Debugging
                                         <input type="checkbox" id="digitalMediaMarketing" name="digitalMediaMarketing"
-                                            value="digitalMediaMarketing"> Digital Media Marketing
-                                        <input type="checkbox" id="qa" name="qa" value="qa"> QA <br>
+                                            value="digitalMediaMarketing" /> Digital Media Marketing
+                                        <input type="checkbox" id="qa" name="qa" value="qa" /> QA <br>
                                     </div>
                                     <div class="chart-demo dash-apex-chart">
                                         <div id="d2_overview" class="apex-charts"></div>
@@ -261,26 +244,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
-    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script> -->
-    <!-- <script src="assets/js/metisMenu.min.js"></script>  -->
-    <!-- <script src="assets/js/waves.min.js"></script> -->
-    <!-- <script src="assets/js/jquery.slimscroll.min.js"></script> -->
-    <!-- <script src="assets/plugins/moment/moment.js"></script> -->
     <script src="JS/apexcharts.min.js"></script>
-    <!-- <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script> -->
-    <!-- <script src="https://apexcharts.com/samples/assets/series1000.js"></script> -->
-    <!-- <script src="https://apexcharts.com/samples/assets/ohlc.js"></script> -->
-    <!-- <script src="assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script> -->
-    <!-- <script src="assets/plugins/jvectormap/jquery-jvectormap-us-aea-en.js"></script> -->
-    <!-- Required datatable js -->
-    <!-- <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script> -->
-    <!-- <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script> -->
     <script src="JS/jquery.dashboard-2.init.js"></script>
-    <!-- App js -->
-    <!-- <script src="assets/js/app.js"></script> -->
 </body>
 
 </html>
